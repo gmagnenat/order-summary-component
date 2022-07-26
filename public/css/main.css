@@ -1,0 +1,151 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font: inherit;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  background-color: hsl(245deg, 100%, 99%);
+  height: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+img,
+svg {
+  width: 100%;
+}
+
+h1,
+h2 {
+  color: hsl(224deg, 23%, 18%);
+}
+
+.card {
+  background-color: hsl(0deg, 0%, 100%);
+  width: min(60rem, 450px);
+  margin-inline: auto;
+  text-align: center;
+  border-radius: 1rem;
+  box-shadow: 0px 40px 40px -20px rgba(13, 48, 189, 0.15);
+}
+.card__illustration__img {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+.card__title {
+  font-size: 1.75rem;
+}
+.card__content {
+  color: hsl(224deg, 23%, 55%);
+  padding: 3rem;
+  padding-top: 2.5rem;
+  display: grid;
+  gap: 1rem;
+  line-height: 1.5;
+}
+.card__body {
+  margin-bottom: 0.55rem;
+}
+.card__btn__submit {
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  background-color: hsl(245deg, 75%, 52%);
+  color: hsl(0deg, 0%, 100%);
+  font-weight: 700;
+  border-radius: 1rem;
+  box-shadow: 0px 20px 20px 0px hsla(245deg, 75%, 52%, 0.19);
+  transition: all 0.2s ease-in-out;
+  margin-bottom: 1rem;
+}
+.card__btn__submit:hover {
+  background-color: hsl(245deg, 83%, 68%);
+  color: hsl(0deg, 0%, 100%);
+}
+.card__btn__cancel {
+  color: hsl(224deg, 23%, 55%);
+  transition: all 0.2s ease-in-out;
+}
+.card__btn__cancel:hover {
+  color: hsl(224deg, 23%, 18%);
+  text-decoration: none;
+}
+
+@media screen and (max-width: 30em) {
+  .card {
+    color: hsl(224deg, 23%, 18%);
+    max-width: 300px;
+    margin-inline: auto;
+  }
+  .card__content {
+    padding: 1.5rem;
+  }
+  .card__title {
+    font-size: 1.375rem;
+  }
+}
+.pricing {
+  display: grid;
+  gap: 1rem;
+}
+.pricing__plan {
+  display: flex;
+  padding: 1.5rem;
+  align-items: center;
+  text-align: left;
+  background-color: hsl(245deg, 100%, 99%);
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+.pricing__plan__title {
+  font-size: 1rem;
+}
+.pricing__plan__btn {
+  margin-left: auto;
+  color: hsl(245deg, 75%, 52%);
+  transition: all 0.2s ease-in-out;
+  font-size: 0.875rem;
+}
+.pricing__plan__btn:hover {
+  color: hsl(245deg, 83%, 68%);
+  text-decoration: none;
+}
+.pricing__icon {
+  margin-right: 1rem;
+  width: 48px;
+  height: 48px;
+}
+
+@media screen and (max-width: 30em) {
+  .pricing__plan {
+    padding: 0.75rem;
+  }
+  .pricing__plan__title {
+    font-size: 0.875rem;
+  }
+  .pricing__plan__btn {
+    font-size: 0.8125rem;
+  }
+}
+footer {
+  margin-top: 2rem;
+  text-align: center;
+}
+footer .attribution {
+  font-size: 11px;
+}
+footer .attribution a {
+  color: hsl(228deg, 45%, 44%);
+}
+
+/*# sourceMappingURL=main.css.map */
