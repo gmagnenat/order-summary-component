@@ -12,7 +12,9 @@ html {
 
 body {
   font-family: "Red Hat Display", sans-serif;
-  background-color: hsl(245deg, 100%, 99%);
+  background: url(/images/pattern-background-desktop.svg) no-repeat;
+  background-size: 100% 50%;
+  background-color: hsl(225deg, 100%, 94%);
   height: 100%;
   min-height: 100vh;
   display: flex;
@@ -44,6 +46,7 @@ h2 {
 }
 .card__title {
   font-size: 1.75rem;
+  font-weight: 700;
 }
 .card__content {
   color: hsl(224deg, 23%, 55%);
@@ -75,10 +78,11 @@ h2 {
 .card__btn__cancel {
   color: hsl(224deg, 23%, 55%);
   transition: all 0.2s ease-in-out;
+  text-decoration: none;
 }
 .card__btn__cancel:hover {
   color: hsl(224deg, 23%, 18%);
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 @media screen and (max-width: 30em) {
